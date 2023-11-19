@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* CSS styles */
+        img {
+              max-width: 100%;
+              height: auto;
+        }
+        p {
+            padding-left: 50px;
+        }
+        
+        h2 {
+            padding-left: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #ebbd3e;
+            color: #ab2020;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            background-color: #e0af29;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ebbd3e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            animation: slideUp 2s;
+        }
+
+        .center-image {
+            text-align: center;
+        }
+
+        .center-image img {
+            transition: transform 0.3s ease;
+        }
+
+        /* Header Link Animation */
+        .header-link {
+            transition: all 0.3s ease;
+            display: inline-block; /* Required for transform */
+        }
+
+        .header-link:hover {
+            color: #ceb3a1; /* Change color on hover */
+            transform: rotate(-5deg) scale(1.1); /* Rotate and scale on hover */
+        }
+
+        @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .center-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p, h2 {
+        padding-left: 20px;
+    }
+
+    /* Add any additional styling for mobile here */
+}
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .combo-details {
+            display: none;
+            color: grey; /* This line changes the color to grey */
+        }
+    </style>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Our Menu - Charcoal Grill Odyssey</title>
+</head>
+<body>
+    <header>
+        
+        <h1>欢迎光临烧烤一番 / Welcome to Our Restaurant</h1>
+        <nav>
+            <a href="index.html">首页 / Home</a>
+            <a href="menu.html">菜单 / Menu</a>
+            <a href="about.html">关于我们 / About</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>套餐/Combo Meals</h2>
+        <ul>
+            <li onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                超级狼族霸王/Super Wolfe Overlord Meal - $58.99
+                <span class="combo-details">(12 special lamb skewers + 12 special beef skewers + 2 chive skewers + 4 potato skewers + 2 herbal tea)</span>
+            </li>
+            <li onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                羊羊疯狂素食/Baaa's Crazy Vegan Meal - $24.99
+                <span class="combo-details">(5 potato skewers+2 chive skewers+2 enokitake mushroom skewers+1 herbal tea)</span>
+            </li>
+            <li onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                热血馒man武道会/Bun's Budokai Meal - $20.99 
+                <span class="combo-details">(2 bun skewers+3 special lamb skewers+1 chive skewers+1 potato skewers+2 herbal tea)</span>
+            </li>
+            <li onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                狼族小霸王/ Little Wolfe Overlord Meal - $30.99
+                <span class="combo-details">(3 special lamb skewers+3 special beef skewers+2 squid skewers+2 potato skewers+2 herbal tea)</span>
+            </li>
+            <li onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+                牛牛羊羊嗨皮/Muuu and Baaa's Happy Meal - $16.99
+                <span class="combo-details">(2 special lamb skewers+2 special beef skewers+2potato skewers+1 bun skewer+1 herbal tea)</span>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section>
+        <h2>烧烤类 & 烤海鲜 / Meat Grill & Seafood Grill</h2>
+        <ul>
+            <li>羊肉串 / Lamb Skewer - 6 skewers $12.99</li>
+            <li>秘制羊肉串 / House Special Lamb Skewer - 6 Skewers $13.99</li>
+            <li>牛肉串 / Beef Skewer - 6 Skewers $12.99</li>
+            <li>秘制牛肉串 / House Special Beef Skewer - $13.99</li>
+            <li>烤肠 / Sausage Skewer - 1 skewer $2.99</li>
+            <li>Starch Sausage Skewer - 1 skewer $3.99</li>
+            <li>Premium Beef Enokitake Skewer - 1 Skewer $4.99</li>
+            <li>Charcoal Squid Skewer - 1 Skewer $7.99</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>烤蔬菜 / Vegetable Grill</h2>
+        <ul><li>烤金针菇 / Enokitake Skewer - 1 Skewer $3.99</li>
+            <li>烤韭菜 / Chive Skewer - 1 Skewer $3.99</li>
+            <li>烤土豆片 / Potato Slice Skewer - 2 in 1 Skewer $2.99</li>
+            <li>炼乳小馒头 / Leche Buns - 2 Buns $4.99</li>
+            <li>烤馒头 / Bun Skewer - 1 Skewer $3.99</li>
+            <!-- Additional vegetable grill items can be added here -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>饮品 / Beverage</h2>
+        <ul>
+            <li>冰糖雪梨 / Pear Juice with Rock Sugar - 1 Bottle $3.99</li>
+            <li>加多宝 /Jia Duo Bao Herbal Tea - 1 Bottle $3.99</li>
+            <li>冰红茶 / Ice Black Tea Lemon Flavor - 1 Bottle $3.99</li>
+            <li>绿茶 / Green Tea Drink Honey Jasmine Flavor - 1 Bottle $3.99</li>
+            <!-- Additional beverages can be added here -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contact us: 626 536 6862 | Open: Fri & Sun 5:00pm-11:00pm; Sat-Sun 5:00pm-11:00pm</p>
+        <p>Address: 298 Pine Ave, Goleta, CA 90802</p>
+    </footer>
+    <script>
+        function showDetails(element) {
+            element.querySelector('.combo-details').style.display = 'inline';
+        }
+
+        function hideDetails(element) {
+            element.querySelector('.combo-details').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

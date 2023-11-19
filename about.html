@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /* CSS styles */
+        img {
+              max-width: 100%;
+              height: auto;
+        }
+        p {
+            padding-left: 50px;
+        }
+        
+        h2 {
+            padding-left: 50px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #ebbd3e;
+            color: #ab2020;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        nav {
+            background-color: #e0af29;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ebbd3e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            animation: slideUp 2s;
+        }
+
+        .center-image {
+            text-align: center;
+        }
+
+        .center-image img {
+            transition: transform 0.3s ease;
+        }
+
+        /* Header Link Animation */
+        .header-link {
+            transition: all 0.3s ease;
+            display: inline-block; /* Required for transform */
+        }
+
+        .header-link:hover {
+            color: #ceb3a1; /* Change color on hover */
+            transform: rotate(-5deg) scale(1.1); /* Rotate and scale on hover */
+        }
+
+        @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .center-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p, h2 {
+        padding-left: 20px;
+    }
+
+    /* Add any additional styling for mobile here */
+}
+
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>欢迎光临碳烤一番 / Welcome to Our Restaurant</h1>
+        <nav>
+            <a href="index.html">首页 / Home</a>
+            <a href="menu.html">菜单 / Menu</a>
+            <a href="about.html">关于我们 / About</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>关于我们 / About Our Restaurant</h2>
+        <p>Step into Charcoal Grill Odyssey, your destination for an authentic grilling experience. Our menu highlights the Super Wolfe Overlord Meal, a robust selection of perfectly charred meats, and the Muwu and Baa’s Happy Meal, a favorite that offers a taste of our best skewered creations. Explore a variety of grilled meats and seafood, like our renowned House Special Lamb Skewer and the delightfully tender Charcoal Squid Skewer. Vegetarians can rejoice with our Enokitake and Potato Slice Skewers, ensuring there's delight in every bite for all.
+            <br/><br/>
+            Complement your meal with a sweet Pear Juice with Rock Sugar or a refreshing Green Tea Drink Honey Jasmine Flavor. Nestled at 298 Pine Avenue, we invite you to relish in the flavors that dance off our grill from 5 pm to 11 pm on Monday and Sunday. Join us for a journey through exquisite tastes and smoky aromas at Charcoal Grill Odyssey.</p>
+            <p>踏入碳烤一番，这里是您寻找地道碳烤风味的理想之地。我们的菜单以超级狼族霸王为亮点，它是一份包含多样完美烤制肉类的丰富选择，而羊羊疯狂素食则汇集了我们最佳的串烧创作。品尝各式各样的烤肉与海鲜，比如我们的特色羊肉串和鲜嫩的炭烤鱿鱼串。素食者也可以享受我们的金针菇串和土豆片串，确保每位顾客都能在这里找到满意的美味。
+            <br/><br/>
+            搭配一杯冰糖雪梨汁或清新的绿茶饮料，为您的美食之旅增添完美的一笔。我们位于Pine Avenue 298号，周五与周日从下午5点至晚上11点，期待您的光临，加入我们的烧烤味觉之旅。碳烤一番，带您领略烟火气息中的精致滋味。</p>
+    </section>
+
+    <footer>
+        <p>Contact us: 626 536 6862 | Open: Fri & Sun 5:00pm-11:00pm; Sat-Sun 5:00pm-11:00pm</p>
+        <p>Address: 298 Pine Ave, Goleta, CA 90802</p>
+    </footer>
+</body>
+</html>
